@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 2%;
+    font-family: 'Arima Madurai', cursive;
+}
+
+h1 {
+    font-size: 4em;
+    margin-top: -10px;
+    text-shadow: 2px 2px #ff0000;
+    margin-bottom: -20px;
+}
+
+p.help {
+    font-size: 1.3em;
+    font-weight: bolder;
+    color: #d8ecff;
+    margin-bottom: 2%;
+}
+
+.typed-cursor {
+    display: none;
+}
+
+p #help {
+    font-size: 1.3em;
+    color: #0099ff;
+}
+
+p.hint {
+    font-size: 0.9em;
+    color: #d8ecff;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#img-tag {
+    width: 40px;
+    display: none;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.input-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input-box {
+    position: relative;
+    height: 55px;
+    margin: 0;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    box-shadow: none;
+    outline: none;
+    width: 60%;
+    padding: 5px 60px 5px 10px;
+    /* Adjusted padding to accommodate the button */
+    color: #2980b9;
+    box-sizing: border-box;
+    /* Ensures padding is included in the element's total width and height */
+}
+
+#search-btn {
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #2c3e50;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.5em;
+    padding: 10px 20px;
+    /* Adjust padding as needed */
+    border: none;
+    border-radius: 0 10px 10px 0;
+    /* Rounded corners to match the input box */
+    -webkit-box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+    /* Makes the button cursor a pointer */
+}
+
+#weather-box {
+    margin-top: 10px;
+    color: #d8ecff;
+    font-weight: bolder;
+    font-size: 1em;
+    gap: 5px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#city {
+    font-size: 1.5em;
+}
+
+.data {
+    color: #ff4646;
+}
+
+.detail {
+    letter-spacing: 3px;
+}
+
+#locationHead {
+    color: #2980b9;
+    font-size: 2.2em;
+    margin-bottom: -10px;
+}
+
+.temp {
+    color: #d8ecff !important;
+    text-shadow: 2px 2px #ff0000;
+}
+
+#temperature {
+
+    font-size: 2em;
+}
+
+#realTemp {
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+#enterLocation,
+#error-message {
+    display: none;
+    color: #d8ecff;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+footer a {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #000;
+}
+
+@media only screen and (max-width: 720px) {
+    body {
+        padding-top: 2%;
+        background-color: #ecf0f1;
+        color: #2c3e50;
+        text-align: center;
+        font-family: 'Arima Madurai', cursive;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin-top: -10px;
+        margin-bottom: -35px;
+    }
+
+    p.help {
+        font-size: 1.3em;
+        font-weight: bolder;
+        color: #2c3e50;
+        min-height: 70px;
+    }
+
+    p #help {
+        color: #2980b9;
+        font-size: 1em;
+    }
+
+    p.hint {
+        font-size: 0.9em;
+        color: #2c3e50;
+        font-weight: bolder;
+    }
+
+    #input-box {
+        display: block;
+        height: 55px;
+        margin: 0;
+        font-family: sans-serif;
+        font-size: 18px;
+        box-shadow: none;
+        overflow: hidden;
+        width: 90%;
+        font-size: 1.5em;
+        border: solid 3px #2c3e50;
+        padding: 5px;
+        color: #2980b9;
+        margin-bottom: 7%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #search-btn {
+        transform: translateY(-75%);
+        right: 5%;
+        top: 40px;
+        background-color: #2c3e50;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: 1.5em;
+        padding: 2%;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        -webkit-box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: -1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    #weather-box {
+        color: #000;
+        font-weight: bolder;
+        font-size: 1.2em;
+        display: none;
+    }
+
+    #city-name {
+        color: #2980b9;
+        font-size: 2em;
+        margin-bottom: -10px;
+    }
+
+    #realTemp {
+        font-size: 3em;
+        font-weight: bolder;
+        margin-bottom: -10px;
+    }
+
+    footer a {
+        font-size: 0.8em;
+        font-weight: bold;
+        color: #000;
+    }
+}

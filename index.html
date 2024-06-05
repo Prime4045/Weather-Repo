@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Weather Informer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:400,700,800" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="main">
+        <div id="search">
+            <h1>Weather Informer </h1><br>
+            <p class="help">Enter your <span id="help"></span> and hit ENTER!</p>
+            <p class="hint">
+                (Allow location access and get weather of your location without typing)
+            </p>
+            <div class="input-section">
+                <input type="text" id="input-box" autofocus>
+            <a href="#" id="search-btn" type="submit">Search</a>
+            </div>
+        </div>
+        <div><p id="enterLocation">Enter the Location</p></div>
+        <div><p id="error-message"></p></div>
+        <div id="load">
+            <div id="weather-box">
+                <h3 id="locationHead">In Your Location...</h3>
+                <div id="city"><span class="data city_name"></span></div>
+                <div class="detail" id="temperature"><span class="data temp"></span></div>
+                <span id="icon"></span>
+                <div class="detail" id="realTemp">Feels Like : <span class="data fellTemp"></span></div>
+                <div class="detail" id="humidity">Humidity : <span class="data humid"></span></div>
+                <div class="detail" id="windSpeed">Wind Speed : <span class="data wind"></span></div>
+                <div class="detail" id="Weather">Weather : <span class="data weather"></span></div>
+            </div>
+        </div>
+        <br>
+        <script src="index.js" type="module"></script>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+            let typed = new Typed("#help", {
+                strings: ["City,", "or State", "or Country",],
+                typeSpeed: 100,
+                backSpeed: 100,
+                loop: true,
+                loopCount: Infinity,
+            })
+        </script>
+</body>
+
+</html>
